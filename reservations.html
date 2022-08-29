@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holiday Inn - Reservations</title>
+
+    <link rel="stylesheet" href="css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Satisfy"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://fonts.googleapis.com/css?family=Cookie"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="header_logo">
+        <h3>Holiday<span> Inn</span></h3>
+      </a>
+
+      <input id="nav" type="checkbox" />
+      <label for="nav"></label>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="reservations.html" class="active">Reservations</a></li>
+          <li><a href="dining.html">Dining</a></li>
+          <li><a href="spa_fitness.html">Spa & Fitness</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="room1">
+        <section class="description">
+          <h2 class="center color-text">Suites</h2>
+          <p class="center">
+            Every piece of detail has been taken care of in our suites to
+            nurture the royalty in you and give you the best possible
+            hospitality. It takes several craftsmen to work on the kind of bed
+            you sleep in, the kind of rug you put your feet on and the quilt you
+            keep yourself warm in. We pay attention to every single little
+            detail. With your own living room and a luxurious large bedroom,
+            every second you spend at the Holiday Inn Suites will be worth
+            remembering. Stay with us and live the royalty you deserve.
+          </p>
+        </section>
+        <div class="center">
+          <img class="displayImage" src="./images/suite.jpg" alt="restaurant" />
+        </div>
+      </div>
+
+      <div id="room2">
+        <section class="description">
+          <h2 class="center color-text">Luxury</h2>
+          <p class="center">
+            The work of crafstmanship in the flooring, the walls, the beds and
+            the bathrooms are a reason our guests love staying in the luxury
+            rooms. These rooms are embodiments of taste and class. These rooms
+            are a literal treat to stay in and we consider it our duty to make
+            every penny worth the luxury. We assure you, these rooms with
+            king-size beds will feel like home the second you set foot inside.
+            Care and love are part of our core values, and we care for you.
+          </p>
+        </section>
+        <div class="center">
+          <img class="displayImage" src="./images/luxury.jpg" alt="bar" />
+        </div>
+      </div>
+
+      <div id="room3">
+        <section class="description">
+          <h2 class="center color-text">Standard</h2>
+          <p class="center">
+            You matter to us and your comfort matters the most to us. We
+            promised you luxury and comfort at every step you take at Holiday
+            Inn and our standard rooms are a statement when it comes to
+            hospitality. Our team strives to bring the best hospitality to you
+            in every form possible and every room possible, hence we made the
+            standard rooms a place for you to forget your worries and spend some
+            time in happiness. These four walls will feel like your own living
+            space.
+          </p>
+        </section>
+        <div class="center">
+          <img class="displayImage" src="./images/standard.jpg" alt="bar" />
+        </div>
+      </div>
+      <br />
+
+      <div id="booknow">
+        <div class="form_wrapper">
+          <h2 class="center color-text">Reservations</h2>
+          <form action="resresponse.html" target="_blank">
+            <div class="row">
+              <label for="fname">First Name</label>
+              <div class="center">
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder="Your first name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <label for="lname">Last Name</label>
+              <div class="center">
+                <input
+                  type="text"
+                  id="lname"
+                  name="lastname"
+                  placeholder="Your last name"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <label for="phoneNumber">Phone Number</label>
+              <div class="center">
+                <input
+                  type="tel"
+                  name="phoneNumber"
+                  id="phoneNumber"
+                  placeholder="Your phone number"
+                  pattern="^[+]?[01]?[- .]?(\([2-9]\d{2}\)|[2-9]\d{2})[- .]?\d{3}[- .]?\d{4}$"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <label for="start">Start Date</label>
+              <div class="center">
+                <input
+                  type="date"
+                  id="start"
+                  name="trip-start"
+                  max="2022-12-31"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <label for="end">End Date</label>
+              <div class="center">
+                <input
+                  type="date"
+                  id="end"
+                  name="trip-start"
+                  max="2022-12-31"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <label for="rooms">Room Type</label>
+              <div class="center">
+                <select name="room type" id="rooms">
+                  <option value="Standard">Standard</option>
+                  <option value="Luxury">Luxury</option>
+                  <option value="Suite">Suite</option>
+                </select>
+              </div>
+            </div>
+            <div class="row pt-10">
+              <div class="center">
+                <input type="submit" value="Submit" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <br />
+      <br />
+    </main>
+
+    <footer class="custom-footer">
+      <div class="footer-nav-links">
+        <h3>Holiday<span> Inn</span></h3>
+
+        <p class="footer-links">
+          <a href="index.html">Home</a>
+          ·
+          <a href="reservations.html">Reservations</a>
+          ·
+          <a href="dining.html">Dining</a>
+          ·
+          <a href="spa_fitness.html">Spa & Fitness</a>
+          ·
+          <a href="events.html">Events</a>
+          ·
+          <a href="aboutus.html">About Us</a>
+        </p>
+
+        <p class="footer-company-name">Holiday Inn &copy; 2021</p>
+      </div>
+
+      <div class="footer-address">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>105 King St E</span> Kitchener, Canada</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1 555 123456</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">contact@holidayinn.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-social-links">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          A one-stop destination to celebrate your best days in the best place.
+        </p>
+
+        <div class="footer-icons">
+          <a><i class="fa fa-facebook"></i></a>
+          <a><i class="fa fa-twitter"></i></a>
+          <a><i class="fa fa-youtube-play"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

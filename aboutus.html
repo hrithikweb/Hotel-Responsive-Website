@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holiday Inn - About Us</title>
+
+    <link rel="stylesheet" href="css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Satisfy"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://fonts.googleapis.com/css?family=Cookie"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="header_logo">
+        <h3>Holiday<span> Inn</span></h3>
+      </a>
+
+      <input id="nav" type="checkbox" />
+      <label for="nav"></label>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="dining.html">Dining</a></li>
+          <li><a href="spa_fitness.html">Spa & Fitness</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="aboutus.html" class="active">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="description">
+        <h2 class="center color-text">About Us</h2>
+        <br />
+        <p class="center">
+          At Holiday Inn, we believe in nurturing a personal connection between
+          the brand, the staff and most importantly, our beloved guests. Mutual
+          respect shared among each of these entities translates into seamless
+          communication, resulting in warm and personalised hospitality.
+          Diversity is an important consideration in our team as it embraces all
+          cultures and has the ability to cater to various practices. We take
+          the time and effort to understand a custom to make sure all that is
+          required during an event is delivered with perfection. It is not just
+          the spaces and banquet halls that deliver, but also the sense of joy
+          that such events bring to our guests. All kinds of palates are tended
+          to by our gifted chefs who cook up wonders in our fine dining
+          restaurant, Hexa, as well as our happening watering hole, Casque.
+        </p>
+      </section>
+      <div class="center">
+        <img id="displayImage" src="images/about.jpg" alt="restaurant" />
+      </div>
+
+      <div class="form_wrapper">
+        <h2 class="center color-text">Contact Us</h2>
+        <form action="rescontact.html" target="_blank">
+          <div class="row">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your first name"
+              required
+            />
+          </div>
+          <div class="row pt-10">
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name"
+            />
+          </div>
+          <div class="row pt-10">
+            <label for="email">E-mail</label>
+            <input
+              type="text"
+              id="email"
+              name="E-mail"
+              placeholder="Your e-mail"
+              required
+            />
+          </div>
+          <div class="row pt-10">
+            <label for="subject">Comments</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something..."
+              style="height: 200px"
+            ></textarea>
+          </div>
+          <div class="row pt-10">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+        <br />
+        <br />
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="custom-footer">
+      <div class="footer-nav-links">
+        <h3>Holiday<span> Inn</span></h3>
+
+        <p class="footer-links">
+          <a href="index.html">Home</a>
+          ·
+          <a href="reservations.html">Reservations</a>
+          ·
+          <a href="dining.html">Dining</a>
+          ·
+          <a href="spa_fitness.html">Spa & Fitness</a>
+          ·
+          <a href="events.html">Events</a>
+          ·
+          <a href="aboutus.html">About Us</a>
+        </p>
+
+        <p class="footer-company-name">Holiday Inn &copy; 2021</p>
+      </div>
+
+      <div class="footer-address">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>105 King St E</span> Kitchener, Canada</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1 555 123456</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">contact@holidayinn.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-social-links">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          A one-stop destination to celebrate your best days in the best place.
+        </p>
+
+        <div class="footer-icons">
+          <a><i class="fa fa-facebook"></i></a>
+          <a><i class="fa fa-twitter"></i></a>
+          <a><i class="fa fa-youtube-play"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
